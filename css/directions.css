@@ -1,0 +1,123 @@
+body {
+  overflow-y: scroll;
+  color: #222222;
+}
+
+#sub-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+#sub-nav > ul {
+  width: 1440px;
+  padding: 20px 0;
+  clear: both;
+  box-sizing: border-box;
+}
+
+#sub-nav > ul > li {
+  position: relative;
+  float: left;
+  margin-right: 35px;
+}
+
+#sub-nav > ul > li::after {
+  content: "\f054";
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  top: 5px;
+  right: -22px;
+  color: #b9b9b9;
+}
+
+#sub-nav > ul > li:last-child::after {
+  display: none;
+}
+
+.main-icon {
+  color: #8a8a8a;
+}
+
+#sub-nav > ul > li > a {
+  color: #555555;
+}
+
+#sub-nav > ul > li > a:hover {
+  text-decoration: underline;
+}
+
+/* /////////////////////// 컨텐츠 영역 /////////////////////// */
+
+#section-directions {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+#map {
+  margin: 0 auto;
+}
+
+.address {
+  margin-bottom: 40px;
+  padding-left: 40px;
+  margin-top: 50px;
+}
+
+.address h3 {
+  font-size: 29px;
+  margin-bottom: 10px;
+}
+
+.address span {
+  font-size: 19px;
+}
+
+.guide {
+}
+
+.guide > div {
+  display: flex;
+  border-top: 1px solid #e0e0e0;
+  padding: 30px;
+}
+
+.guide h3 {
+  font-size: 29px;
+  padding: 10px;
+}
+
+.guide .way-type {
+  display: inline-block;
+  background-color: transparent;
+  padding: 3px 13px 4px;
+  margin: 17px 0 7px;
+  border-radius: 20px;
+  color: #b16916;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.guide .way {
+  text-indent: 15px;
+}
+
+.guide .title {
+  display: flex;
+  gap: 10px;
+  width: 340px;
+}
+
+.guide .title img {
+  width: 60px;
+  height: 60px;
+}
+
+.public-transport {
+  margin-bottom: 22px;
+}

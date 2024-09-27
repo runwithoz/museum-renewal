@@ -1,0 +1,875 @@
+/* 섹션1 */
+#section1 {
+  width: 1440px;
+  margin: 5px auto 50px;
+}
+
+.weatherWrap {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 50px;
+  margin-bottom: 5px;
+  position: relative;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.weatherWrap .weather {
+  display: flex;
+  align-items: center;
+}
+
+.weatherWrap .wIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+
+.weatherWrap .wIcon img {
+  width: 50px;
+}
+
+.weatherWrap .wDescription {
+}
+
+.weatherWrap .wBar {
+  font-size: 11px;
+  line-height: 0.5;
+  padding: 0 7px;
+  color: #c0c0c0;
+}
+
+.weatherWrap .wAircondition {
+  color: #222222;
+}
+
+.weatherWrap .wTemp {
+  font-size: 20px;
+  margin-left: 8px;
+  line-height: 0.5;
+}
+
+/* 스와이퍼1 */
+
+.swiper1 {
+  width: 1440px;
+  height: 620px;
+  margin: 0 auto;
+}
+
+.swiper1 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  /* 내용을 중앙정렬 하기위해 flex 사용 */
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  /* 좌우 기준 중앙정렬 */
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  /* 위아래 기준 중앙정렬 */
+  align-items: center;
+}
+
+.swiper1Btns {
+}
+
+.swiper1Btns > button {
+  position: absolute;
+  top: 547px;
+  z-index: 999;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  transition: all 0.2s ease-out;
+}
+
+.swiper1Btns > .prev1 {
+  background: url(../images/arrow-l-w.svg) no-repeat rgba(0, 0, 0, 0.2);
+  background-size: 25%;
+  background-position: 45% 45%;
+  left: 1230px;
+}
+
+.swiper1Btns > .next1 {
+  background: url(../images/arrow-r-w.svg) no-repeat rgba(0, 0, 0, 0.2);
+  background-size: 25%;
+  background-position: 55% 45%;
+  left: 1370px;
+}
+
+.swiper1Btns > .play1 {
+  background: url(../images/play.svg) no-repeat rgba(0, 0, 0, 0.9);
+  background-size: 32%;
+  background-position: 56% 45%;
+  left: 1300px;
+}
+
+.swiper1Btns > .pause1 {
+  background: url(../images/pause.svg) no-repeat rgba(0, 0, 0, 0.9);
+  background-size: 30%;
+  background-position: 50% 45%;
+  left: 1300px;
+}
+
+.swiper1Btns > button.hovered {
+  background-color: rgba(126, 126, 126, 1);
+}
+
+/* section - info */
+
+#section2 {
+  width: 1440px;
+  margin: 50px auto 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.border1 {
+  flex-basis: 2px;
+  background-color: #000000;
+}
+
+.infoItem {
+  width: 1440px;
+  display: flex;
+  justify-content: center;
+  color: #222222;
+  font-weight: 600;
+}
+
+.border2 {
+  flex-basis: 1px;
+  background-color: #dadada;
+}
+
+.infoItem > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  margin: 8px 0;
+  padding: 18px 0 21px;
+  width: 500px;
+}
+
+.infoItem > .info {
+  width: 270px;
+}
+
+.infoItem > .info span {
+  font-size: 23px;
+}
+
+.infoItem > .info > a {
+  padding: 3px;
+  margin-top: 3px;
+  color: #222222;
+}
+
+.underline1 {
+  width: 0;
+  height: 3px;
+  margin-top: 3px;
+  background-color: #444444;
+  transition: all 0.3s ease;
+}
+
+.infoItem > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-top: 15px;
+}
+
+.infoItem i {
+  padding-right: 8px;
+}
+
+.infoItem > div > p {
+  font-size: 25px;
+}
+
+.infoItem > div span {
+  font-size: 18px;
+}
+
+.infoItem > div > div > p {
+  font-size: 13px;
+}
+
+/* 섹션3 전시 스와이퍼 */
+#section3 {
+  width: 1505px;
+  margin: 90px auto;
+}
+
+.exhibition h2 {
+  font-size: 46px;
+  text-align: center;
+}
+
+.swiper2 {
+  width: 1505px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding-top: 80px;
+  padding-left: 10px;
+}
+
+/* 스와이퍼2 네비게이션 버튼*/
+
+.swiper2Nav {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding-right: 40px;
+}
+
+.swiper2Nav .prev2,
+.swiper2Nav .next2,
+.swiper2Nav .play2,
+.swiper2Nav .pause2 {
+  position: initial;
+  width: 17px;
+  height: 20px;
+  margin-top: 0;
+}
+
+.swiper2Nav .pager2 {
+  position: initial;
+  display: inline-block;
+  vertical-align: top;
+  width: 80px;
+}
+
+.swiper2Nav .prev2 {
+  background: url(../images/chevron-left.svg) no-repeat center 60% / 60%;
+}
+
+.swiper2Nav .next2 {
+  background: url(../images/chevron-right.svg) no-repeat center 60% / 60%;
+  margin-right: 20px;
+}
+
+.swiper2Nav .play2 {
+  background: url(../images/icon-play.svg) no-repeat center 60% / 80%;
+}
+
+.swiper2Nav .pause2 {
+  background: url(../images/icon-pause.svg) no-repeat center 60% / 80%;
+}
+
+.swiper2 .swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  /* 내용을 중앙정렬 하기위해 flex 사용 */
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  /* 좌우 기준 중앙정렬 */
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  /* 위아래 기준 중앙정렬 */
+  align-items: center;
+  height: 572.5px;
+  width: 375px !important;
+}
+
+.swiper2 > .swiper-wrapper > .swiper-slide {
+  overflow: hidden;
+}
+
+.swiper2 > .swiper-wrapper > .swiper-slide > img {
+  position: relative;
+  left: 0;
+  width: 315px;
+  transition: all 0.3s ease-in-out;
+}
+
+.swiper2 > .swiper-wrapper > .swiper-slide:hover > img {
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.swiper2 > .swiper-wrapper > .swiper-slide > .textArea {
+  width: 315px;
+  height: 100px;
+  margin-top: 30px;
+}
+
+.swiper2 .title {
+  font-weight: 500;
+}
+
+.swiper2 .date {
+  margin-top: 8px;
+  color: #666666;
+  font-size: 15px;
+}
+
+/* section info */
+/* section info tabset */
+
+#section4 {
+  width: 1440px;
+  height: 500px;
+  margin: 100px auto 60px;
+  position: relative;
+}
+
+.infoWrap {
+  position: relative;
+  width: 720px;
+  height: 390px;
+}
+
+.infoWrap h2 {
+  font-size: 46px;
+  border-bottom: 1px solid #d8d8d8;
+  padding-bottom: 25px;
+}
+
+.infoTabSet {
+}
+
+.infoTabs {
+  position: absolute;
+  top: 28px;
+  right: 0;
+  display: flex;
+  gap: 35px;
+}
+
+.infoTabs li {
+  position: relative;
+}
+
+.infoTabs li:nth-child(1)::after,
+.infoTabs li:nth-child(2)::after {
+  position: absolute;
+  top: 10px;
+  right: -19px;
+  content: "";
+  width: 2px;
+  height: 20px;
+  background-color: #d8d8d8;
+  transform: skew(-25deg);
+}
+
+.infoTabs li a {
+  font-size: 25px;
+  color: #222222;
+  font-weight: 300;
+}
+
+.infoTabs li a.on {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.infoPanels {
+  margin-top: 25px;
+}
+
+.infoPanels .panel ul {
+  display: flex;
+  flex-direction: column;
+  height: 323.33px;
+  justify-content: center;
+}
+
+.infoPanels .panel ul li {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 22px;
+}
+
+.infoPanels .panel ul li::before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 22.5px;
+  width: 7px;
+  height: 7px;
+  background-color: #222222;
+}
+
+.infoPanels .panel ul li a {
+  font-size: 20px;
+  color: #222222;
+  font-weight: 300;
+  transition: left 0.3s ease;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.infoPanels .panel ul li span {
+  font-size: 17px;
+  color: #adadad;
+}
+
+.infoPanels .panel ul li a:hover {
+  border-bottom: 1px solid #222222;
+  font-weight: 600;
+}
+
+/* section info slide */
+
+.infoBannerWrap {
+}
+
+.infoBanner li {
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+
+.infoBanner .banner1 {
+  background: url(../images/bg_info1.jpg) no-repeat center center / cover;
+  width: 650px;
+  height: 320.5px;
+}
+
+.infoBanner .banner2 {
+  background: url(../images/bg_info2.jpg) no-repeat center center / cover;
+  width: 650px;
+  height: 320.5px;
+}
+
+.infoBanner .banner3 {
+  background: url(../images/bg_info3.jpg) no-repeat center center / cover;
+  width: 650px;
+  height: 320.5px;
+}
+
+.infoNavWrap {
+  position: absolute;
+  top: 60px;
+  right: 0;
+}
+
+.slideIndex p {
+  display: none;
+  position: absolute;
+  top: 19px;
+  left: -150px;
+}
+
+.slideIndex p.active {
+  display: block;
+  font-weight: 500;
+}
+
+.slideIndex span.dash {
+  color: #222222;
+  line-height: -10;
+}
+
+.slideIndex .emphasis {
+  font-weight: 700;
+}
+
+.infoNav {
+  width: 60px;
+  height: 20px;
+  position: absolute;
+  top: 22px;
+  left: -62px;
+}
+
+.infoNav > div {
+  float: left;
+  cursor: pointer;
+}
+
+.infoNav .prev {
+  width: 20px;
+  height: 20px;
+  background: url(../images/arrow-l.svg) no-repeat center 55%;
+}
+
+.infoNav .pause {
+  width: 20px;
+  height: 20px;
+  background: url(../images/pause_blk.svg) no-repeat center 46%;
+}
+
+.infoNav .play {
+  width: 20px;
+  height: 20px;
+  background: url(../images/play_blk.svg) no-repeat center 53%;
+}
+
+.infoNav .next {
+  width: 20px;
+  height: 20px;
+  background: url(../images/arrow-r.svg) no-repeat center 50%;
+}
+
+/* section5 edu applying */
+
+#section5 {
+  position: relative;
+  width: 1440px;
+  height: 500px;
+  margin: 0 auto 100px;
+}
+
+.eduWrap {
+  position: relative;
+  width: 1440px;
+  height: 500px;
+}
+
+.eduBannerWrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 550px;
+  height: 400px;
+}
+
+.eduTabSetWrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 800px;
+  height: 470px;
+}
+
+.eduTabSetWrap > h2 {
+  font-size: 46px;
+  padding-bottom: 20px;
+}
+
+.eduTabs {
+  position: absolute;
+  top: 27px;
+  right: 20px;
+  display: flex;
+  gap: 35px;
+}
+
+.eduTabs li:first-child::after {
+  position: absolute;
+  top: 10px;
+  right: 108px;
+  content: "";
+  width: 2px;
+  height: 20px;
+  background-color: #d8d8d8;
+  transform: skew(-25deg);
+}
+
+.eduTabs a {
+  font-size: 25px;
+  color: #222222;
+}
+
+.eduTabs a.on {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.eduPanels .contentBox {
+  display: flex;
+  flex-direction: column;
+  height: 404px;
+  width: 800px;
+}
+
+.eduPanels .content {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  width: 800px;
+  border-bottom: 1.5px solid #cfcfcf;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.eduPanels .content.hovered {
+  border-bottom: 1.5px solid #111111;
+}
+
+.eduPanels .content .type {
+  background-color: #222222;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 4;
+  width: 80px;
+  height: 80px;
+}
+
+.eduPanels .eduVideo .content .type {
+  font-size: 18px;
+  line-height: 4.2;
+}
+
+.eduPanels .content .info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+  flex: 1;
+}
+
+.eduPanels .content .info .classifying ul {
+  display: flex;
+}
+
+.eduPanels .content .info .classifying ul li {
+  display: flex;
+  border: 1px solid #c0c0c0;
+  font-size: 12px;
+  padding: 1.5px 0px;
+  width: 45px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.eduPanels .content .info .name {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 6px;
+}
+
+.eduPanels .content .info .date {
+  font-size: 14px;
+  color: #444444;
+}
+
+.eduPanels .content button {
+  width: 70px;
+  height: 70px;
+  background-color: #efefef;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.eduPanels .content button.hovered {
+  background-color: #cfcfcf;
+}
+
+.eduBanner {
+  width: 550px;
+  height: 474px;
+  margin-top: 16px;
+}
+
+.eduBanner > div {
+  display: none;
+}
+
+.eduBanner > div:first-child {
+  display: block;
+}
+
+/* /////////////////////// 섹 션 6 /////////////////////// */
+
+#section6 {
+  width: 100%;
+  height: 800px;
+  margin: 100px auto 50px;
+}
+
+#section6 h2 {
+  text-align: center;
+  font-size: 46px;
+}
+
+.swiper3 {
+  width: 100%;
+  height: 480px;
+  margin: 70px 0 20px;
+  cursor: pointer;
+}
+
+.swiper3 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  /* 내용을 중앙정렬 하기위해 flex 사용 */
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  /* 좌우 기준 중앙정렬 */
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  /* 위아래 기준 중앙정렬 */
+  align-items: center;
+  width: auto !important;
+
+  padding: 0 40px;
+}
+
+.swiper-pagination-progressbar {
+  height: 6px;
+  width: 1350px;
+  border-radius: 2.5px;
+  background: rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: var(--primary-color);
+}
+
+.swiper3Nav {
+  position: relative;
+  width: 1440px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.pager3 {
+  position: relative;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 999;
+}
+
+.prev3,
+.next3 {
+  position: absolute !important;
+  top: 92px;
+  z-index: 999;
+}
+
+.prev3 {
+  width: 20px;
+  height: 26px;
+  background: url(../images/chevron-left.svg) no-repeat center center / 90%;
+  left: 0px;
+}
+
+.next3 {
+  width: 20px;
+  height: 26px;
+  background: url(../images/chevron-right.svg) no-repeat center center / 90%;
+  right: 0px;
+}
+
+.swiper3 .wrap {
+  position: relative;
+}
+
+.swiper3 .relics1 {
+  width: 250px;
+}
+
+.swiper3 .relics2 {
+  width: 300px;
+}
+
+.swiper3 .relics3 {
+  width: 500px;
+}
+
+.swiper3 .relics4 {
+  width: 400px;
+}
+
+.swiper3 .relics5 {
+  width: 300px;
+}
+
+.swiper3 .relics6 {
+  width: 450px;
+}
+
+.swiper3 .desc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 5px solid var(--primary-color);
+  background-color: rgba(0, 0, 0, 0.6);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.swiper3 .desc.hovered {
+  opacity: 1;
+}
+
+.swiper3 .desc > span {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  padding-bottom: 15px;
+}
+
+.swiper3 .desc > div {
+  width: 60px;
+  height: 60px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  margin-bottom: 10px;
+  color: #dfdfdf;
+  text-align: center;
+  font-size: 35px;
+  line-height: 1.6;
+}
+
+.relicsWrap .prev3 {
+  width: 20px;
+  height: 26px;
+  background: url(../images/chevron-left.svg) no-repeat center center / 90%;
+}
+
+.relicsWrap .next3 {
+  width: 20px;
+  height: 26px;
+  background: url(../images/chevron-right.svg) no-repeat center center / 90%;
+}
