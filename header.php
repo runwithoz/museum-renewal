@@ -150,7 +150,7 @@
                     <ul class="sub5">
                       <li><a href="#">공지사항</a></li>
                       <li><a href="#">교육/행사</a></li>
-                      <li><a href="board_list.php">자유게시판</a></li>
+                      <li><a href="board_list.php">관람후기</a></li>
                     </ul>
                   </div>
                 </div>

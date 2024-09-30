@@ -435,6 +435,41 @@
       </div>
     </section>
 
+    <section id="section-review">
+      
+      <div class="inner">
+      <h2>관람후기</h2>
+        <ul>
+      <?php 
+	                $con = mysqli_connect("localhost", DBuser, DBpass, DBname);
+                    $sql = "select * from board order by num desc limit 4";
+                    $result = mysqli_query($con,$sql);
+
+                    if (!$result) {
+                        echo "게시판 DB 테이블이 생성 전이거나 아직 게시글이 없습니다.";
+                    } else {
+                        while ($row = mysqli_fetch_array($result)) {
+                            $regist_day = substr($row["regist_day"],0,10);
+                            //substr(시작위치, 반환할 문자열 갯수): 문자열 부분적으로 가져오기  
+
+                ?>
+                            <li>
+                                <span class="r-subject"><?=$row['subject']?></span>
+                                <span class="r-content"><?=$row['content']?></span>
+                                <div>
+                                  <span class="r-name"><?=$row['name']?></span>
+                                  <span class="r-name"> | </span>
+                                  <span class="r-regist-day"><?=$row['regist_day']?></span>
+                                </div>
+                            </li>
+                <?php
+                        }
+                    }
+                ?>
+                </ul>
+      </div>
+    </section>
+
     <!-- section: relics -->
     <section id="section6">
       <div class="relicsWrap">

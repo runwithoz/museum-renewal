@@ -43,7 +43,7 @@
           <a href="./index.php"><i class="fa-solid fa-house"></i></a>
         </li>
         <li><a href="#">열린마당</a></li>
-        <li><a href="#">자유게시판</a></li>
+        <li><a href="#">관람후기</a></li>
       </ul>
     </div>
 
